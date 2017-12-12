@@ -1,0 +1,31 @@
+$color-success: #10CD98;
+$color-warning: #FD6363;
+
+.x-toast {
+	width: 200px;
+	line-height: 50px;
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	&__success {
+		background: $color-success;
+	}
+	&__warning {
+		background: $color-warning;
+	}
+}
+
+.toast-enter,
+.toast-leave-to {
+	opacity: 0;
+	transform: translate3d(-50%, -32px, 0) scale3d(.95, .95, 1);
+}
+
+.toast-enter-active,
+.toast-leave-active {
+	transition: all .15s ease;
+}

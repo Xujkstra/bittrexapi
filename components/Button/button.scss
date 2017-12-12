@@ -1,0 +1,92 @@
+$color-primary: #10CD98;
+$color-primary-hover: #24BD91;
+$color-danger: #FD6363;
+$color-danger-hover: #F7604A;
+$color-orange: #FF9D2B;
+$color-orange-hover: #FF872B;
+$font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,sans-serif;
+
+$buttonBG: (
+	primary: $color-primary,
+	danger: $color-danger,
+	orange: $color-orange
+);
+
+$buttonHoverBG: (
+	primary: $color-primary-hover,
+	danger: $color-danger-hover,
+	orange: $color-orange-hover
+);
+
+.x-button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	cursor: pointer;
+	padding: 0;
+	color: #fff;
+	font-size: 16px;
+	width: 140px;
+	height: 40px;
+	letter-spacing: 1px;
+	transition: background-color 150ms ease-in-out 0s, color 150ms ease-in-out 0s;
+	font-family: $font-family;
+	&:active {
+		padding-top: 1px;
+	}
+}
+
+@each $type,$color in  $buttonBG {
+	.x-button__#{$type} {
+		background: $color;
+	}
+}
+
+@each $type,$color in $buttonHoverBG {
+	.x-button__#{$type}:hover {
+		background-color: $color;
+	}
+}
+
+@each $type,$color in $buttonBG {
+	.x-button__#{$type}-bordered {
+		color: $color;
+		border: 1px solid $color;
+		background: #fff;
+	}
+}
+
+@each $type,$color in $buttonBG {
+	.x-button__#{$type}-bordered:hover {
+		color: #fff;
+		background-color: $color;
+	}
+}
+
+.x-button__disabled {
+	background: #E8E8E8;
+	color: #889399;
+	cursor: not-allowed;
+}
+
+.x-button__primary-text {
+	color: #2d2d30;
+	background: none;
+	border: none;
+	&:hover {
+		color: $color-primary;
+		text-decoration: underline;
+	}
+}
+
+@each $type,$color in $buttonBG {
+	.x-button__#{$type}.loading {
+		cursor: auto;
+		&:hover {
+			background: $color;
+		}
+	}
+}

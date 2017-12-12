@@ -1,0 +1,33 @@
+.layout-calculator {
+  width: 1170px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fafafa;
+  color: #5A5A5A;
+}
+
+.market-list {
+  width: 100%;
+  padding: 0;
+  .market-name,
+  .market-item {
+    display: flex;
+    line-height: 30px;
+    border-bottom: 1px solid #F1F1F1;
+    &:hover {
+      background: #FFF;
+    }
+    > span {
+      flex-basis: 250px;
+      flex-grow: 1;
+      text-align: left;
+      &.hover {
+        background: #FFF;
+      }
+      &:nth-child(4) {
+        color: #F00;
+      }
+    }
+  }
+}

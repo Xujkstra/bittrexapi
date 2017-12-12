@@ -1,0 +1,50 @@
+.layout-main-font {
+  width: 1170px;
+  margin: 0 auto;
+  background: #EBEBEB;
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout-body-words {
+  flex-basis: 400px;
+  padding: 20px;
+  background: #F8F8Fb;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .5);
+}
+
+.layout-body-operation {
+  flex-basis: 600px;
+  .input-area {
+    margin: 10px auto;
+  }
+  .checkbox input[type=checkbox]{
+    margin-right: 10px;
+  }
+  .input {
+    font-size: 16px;
+    line-height: 1.2;
+    min-width: 200px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    padding-left: 10px;
+    margin-left: 10px;
+    outline: none;
+  }
+  .list {
+    margin: 20px auto;
+  }
+  .list .font-item {
+    cursor: pointer;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 1px;
+    background: #fff;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+}

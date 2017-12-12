@@ -1,0 +1,22 @@
+.layout-main-canvas {
+  background: #F8F8FB;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.layout-title {
+  margin-top: 0;
+  font-size: 26px;
+  color: #464646;
+}
+
+#canvas {
+  display: block;
+  width: 1000px;
+  height: 600px;
+  margin: 0 auto;
+  background: #fff;
+  transform: translate3d(-.5px, -.5px, 0);
+}

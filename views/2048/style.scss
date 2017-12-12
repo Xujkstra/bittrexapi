@@ -1,0 +1,40 @@
+
+.grid {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  background: #FBFBCF;
+  text-align: center;
+  &:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+}
+
+.board {
+  width: 400px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  .board-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    .content {
+      color: #464646;
+      background: #FBFBCF;
+      border-radius: 5px;
+    }
+  }
+}
